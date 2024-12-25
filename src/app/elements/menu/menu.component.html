@@ -1,0 +1,5 @@
+<div class="topnav"> 
+    <a class="active" id="profile" ><mat-icon>person</mat-icon></a> 
+    <a *ngIf="isDesktop == true" class="DateTime">امروز : {{DateTime}}</a>
+    <a *ngIf="isMobile == true || isTablet == true"><mat-icon (click)="toggleSidebar()">menu</mat-icon></a>
+  </div> 

@@ -1,0 +1,62 @@
+
+  
+  .dashboard-container {
+    gap: 20px;
+    
+  }
+  
+  .report-card {
+    width: 250px;
+    height: 150px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    gap: 20px;
+
+  }
+  
+  .report-card:hover {
+    transform: scale(1.1,1.1);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .report-card .icon {
+    margin-bottom: 5px;
+  }
+  .report-card{
+    border : solid 1px rgba(0, 0, 0, 0.226)
+  }
+  .sales {
+    background: linear-gradient(135deg, #2196f3, #21cbf3);
+  }
+  
+  .users {
+    background: linear-gradient(135deg, #4caf50, #8bc34a);
+  }
+  
+  .inventory {
+    background: linear-gradient(135deg, #ff9800, #ffc107);
+  }
+  
+  mat-card-content p {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+  }
+
+mat-card {
+    width: 100%; 
+    gap: 20px;
+
+}
+
+
+.mainGroup{
+  background-color: rgba(238, 237, 237, 0.103);
+  padding: 20px;
+  border-radius: 5px;
+}

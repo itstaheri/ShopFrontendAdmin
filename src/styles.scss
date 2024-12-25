@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%;  font-family: 'Iranian Sans'}
+body { margin: 0;    }
+@font-face {
+    font-family: 'Iranian Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Iranian Sans'), url('https://fonts.cdnfonts.com/s/19710/irsans.woff') format('woff');
+}
+@font-face {
+    font-family: 'Iranian Sans';
+    font-style: normal;
+    font-weight: 800;
+    src: local('Iranian Sans'), url('https://fonts.cdnfonts.com/s/19710/irsansb.woff') format('woff');
+}
+
+i, .fa, .mat-icon {
+    font-family: 'Material Icons', 'FontAwesome', sans-serif !important;
+  }
+  * {
+    font-family: 'Iranian Sans', sans-serif !important;
+  }

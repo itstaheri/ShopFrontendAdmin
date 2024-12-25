@@ -1,0 +1,41 @@
+.topnav {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    background-color: #1E293B ;
+    padding: 0 16px; 
+    overflow: hidden;
+  }
+  
+  .topnav a {
+    display: block; 
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  
+  .topnav a.active {
+    background-color: #0423aa42;
+    color: white;
+  }
+  
+  .menuicon {
+    cursor: pointer;
+    color: white; 
+    font-size: 20px; 
+  }
+  #profile{
+    left: 0xp;
+
+  }
+  #profile:hover{
+    background-color: #073074;
+    transform: scale(1.1,1.1);
+
+  }
+  .DateTime{
+    font-size: 12px !important;
+  }
