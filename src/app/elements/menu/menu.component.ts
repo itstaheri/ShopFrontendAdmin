@@ -2,12 +2,13 @@ import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
 import { DeviceDetectorService } from 'ngx-device-detector';
-import { AppComponent } from '../../app.component';
+import { MatMenuModule } from '@angular/material/menu';
+import { MainComponent } from '../../components/main/main.component';
 
 @Component({
   selector: 'app-menu',
   standalone: true,
-  imports: [MatIconModule,CommonModule],
+  imports: [MatIconModule,CommonModule,MatMenuModule],
   templateUrl: './menu.component.html',
   styleUrl: './menu.component.scss'
 })
@@ -15,10 +16,11 @@ import { AppComponent } from '../../app.component';
 export class MenuComponent implements OnInit {
 
 
+  user = { fullName: 'علی طاهری' };
   isMobile  = false;
   isTablet = false;
   isDesktop = false;
-  constructor(private deviceService: DeviceDetectorService,private appComponent : AppComponent){
+  constructor(private deviceService: DeviceDetectorService,private appComponent : MainComponent){
     this.isMobile = deviceService.isMobile()
     this.isDesktop = deviceService.isDesktop()
     this.isTablet = deviceService.isTablet()
@@ -31,7 +33,10 @@ ngOnInit(): void {
 DateTime! : String
 
 toggleSidebar(){
-this.appComponent.toggleSidenav()
-
+this.appComponent.toggleSidenav();
+ 
+}
+editProfile() {
+  console.log('ویرایش پروفایل کلیک شد!');
 }
 }

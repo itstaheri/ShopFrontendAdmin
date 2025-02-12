@@ -29,7 +29,8 @@
   }
   #profile{
     left: 0xp;
-
+    background-color: #073074;
+    cursor: pointer;
   }
   #profile:hover{
     background-color: #073074;
@@ -39,3 +40,9 @@
   .DateTime{
     font-size: 12px !important;
   }
+  .mat-menu-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  

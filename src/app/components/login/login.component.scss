@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap');
+
+body {
+    background: #1b1f3b; 
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    direction: rtl;
+    font-family: 'Vazirmatn', sans-serif;
+}
+.wave {
+    position: fixed; 
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1; 
+    overflow: hidden;
+    
+}
+
+.wave svg {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    animation: waveAnim 1s infinite linear alternate;
+}
+.wave-top {
+    position: fixed; 
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1; 
+    overflow: hidden;
+    fill: #4fa3d1 !important;
+
+}
+
+
+
+@keyframes waveMorph {
+    0% {
+        d: path("M0,256 C200,300 400,200 600,250 C800,300 1000,200 1200,250 C1400,300 1600,200 1800,250 L1800,300 L0,300 Z");
+    }
+    50% {
+        d: path("M0,256 C200,220 400,280 600,240 C800,200 1000,260 1200,230 C1400,210 1600,270 1800,230 L1800,300 L0,300 Z");
+    }
+    100% {
+        d: path("M0,256 C200,300 400,200 600,250 C800,300 1000,200 1200,250 C1400,300 1600,200 1800,250 L1800,300 L0,300 Z");
+    }
+}
+
+.login-container {
+    background: #fff; 
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    max-width: 380px;
+    width: 100%;
+    font-size: 14px;
+}
+.logo-container {
+    margin-bottom: 1rem;
+    text-align: center;
+    margin: 10px;
+    font-size: 15px
+}
+.logo-container img {
+    width: 80px;
+    height: auto;
+}
+.txt-login {
+    margin-bottom: 1rem;
+    color: #1b1f3b; 
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+
+}
+.form-control {
+    border-radius: 8px;
+    text-align: right;
+}
+.btn-login {
+    background: #1b1f3b; 
+    color: #fff;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+.btn-login:hover {
+    background: #2e3766; 
+    color: #fff ;
+}
+
+.text-muted {
+    text-align: center;
+    font-size: 0.9rem;
+}
+a {
+    color: #1b1f3b;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}

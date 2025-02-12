@@ -1,5 +1,19 @@
 <div class="topnav"> 
-    <a class="active" id="profile" ><mat-icon>person</mat-icon></a> 
+    <a  id="profile" [matMenuTriggerFor]="profileMenu">
+      <mat-icon >person</mat-icon>
+    </a>
+  
+  <mat-menu #profileMenu="matMenu">
+    <button mat-menu-item disabled>
+      <mat-icon>account_circle</mat-icon>
+      <span>{{ user.fullName }}</span>
+    </button>
+    <button mat-menu-item (click)="editProfile()">
+      <mat-icon>edit</mat-icon>
+      <span>ویرایش پروفایل</span>
+    </button>
+  </mat-menu>
+
     <a *ngIf="isDesktop == true" class="DateTime">امروز : {{DateTime}}</a>
     <a *ngIf="isMobile == true || isTablet == true"><mat-icon (click)="toggleSidebar()">menu</mat-icon></a>
   </div> 
