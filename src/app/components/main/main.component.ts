@@ -30,7 +30,7 @@ export class MainComponent {
   isTable = false;
   isDesktop = false;
 
- public menuStatus = 1
+ public menuStatus = 0
   constructor(private renderer: Renderer2,private deviceService: DeviceDetectorService){
     this.isMobile = deviceService.isMobile()
     this.isDesktop = deviceService.isDesktop()
@@ -45,6 +45,8 @@ export class MainComponent {
    
     chengeMenuStatus(number : number){
       
-      this.menuStatus = number;
+      if(number == this.menuStatus) this.menuStatus = 0
+      else 
+        this.menuStatus = number;
     }
 }  

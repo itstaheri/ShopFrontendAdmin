@@ -31,6 +31,7 @@
   }
   .sidenav mat-list-item:hover{
     background-color: #2563EB ;
+    width: 100%;
   }
 span{
     color: rgba(255, 255, 255, 0.705) !important;
@@ -57,8 +58,21 @@ span{
     height: 51.5px;
     background-color: #111827;
     border-radius: 0px 0px 0px 15px;
+    border-right: none;
 
   }
+  .sub-menu > mat-list-item{
+    transition: height 1s !important;
+    background-color: #141d31 !important;
+
+  }
+ 
+  
+.sub-menu{
+  transition: height 1s !important;
+
+}
+  
   .manuicon{
     color: white !important;
     vertical-align:top !important;
